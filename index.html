@@ -1,14 +1,246 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validação Meta</title>
-  <!-- Meta tag de verificação do Facebook -->
-  <meta name="facebook-domain-verification" content="COLOQUE_O_CÓDIGO_AQUI" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agente Financeiro WPP — Assistente pelo WhatsApp</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Assistente financeiro simples pelo WhatsApp: organização de despesas, lembretes e registro de lançamentos. Fale conosco pelo WhatsApp." />
+  <link rel="canonical" href="https://guipasquetti.github.io/" />
+
+  <!-- Open Graph / Compartilhamento -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://guipasquetti.github.io/" />
+  <meta property="og:title" content="Agente Financeiro WPP — Assistente pelo WhatsApp" />
+  <meta property="og:description" content="Organize suas finanças pelo WhatsApp: lançamentos, lembretes e relatórios simples." />
+  <meta property="og:image" content="https://guipasquetti.github.io/og-image.jpg" />
+
+  <!-- Twitter Card (opcional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Agente Financeiro WPP — Assistente pelo WhatsApp" />
+  <meta name="twitter:description" content="Organize suas finanças pelo WhatsApp: lançamentos, lembretes e relatórios simples." />
+  <meta name="twitter:image" content="https://guipasquetti.github.io/og-image.jpg" />
+
+  <!-- Verificação de domínio do Meta (trocar o valor) -->
+  <!-- TODO: substitua pelo token de verificação fornecido pelo Meta -->
+  <meta name="facebook-domain-verification" content="COLOQUE_SEU_TOKEN_AQUI" />
+
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#131922; --txt:#e9eef5; --muted:#a7b2c2; --brand:#24d366; --brand-dark:#1fb65a;
+      --max:1080px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    header{position:sticky;top:0;background:rgba(11,15,20,.7);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #1f2835}
+    .wrap{max-width:var(--max);padding:0 20px;margin:0 auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .brand .logo{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#1fb65a,#24d366)}
+    .menu a{margin-left:18px;color:var(--muted)}
+    .hero{padding:72px 0;display:grid;gap:24px;grid-template-columns:1.2fr .8fr;align-items:center}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.2;margin:0}
+    .hero p{color:var(--muted);margin:8px 0 0}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#061007;font-weight:700;border:0;border-radius:10px;padding:14px 18px;margin-top:18px}
+    .cta:focus,.cta:hover{background:var(--brand-dark)}
+    .card{background:var(--card);border:1px solid #223044;border-radius:14px;padding:18px}
+    .grid{display:grid;gap:16px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    section{padding:56px 0;border-top:1px solid #172131}
+    h2{margin:0 0 14px}
+    .muted{color:var(--muted)}
+    footer{padding:32px 0;border-top:1px solid #172131;color:var(--muted);font-size:14px}
+    .kpi{display:flex;gap:18px;flex-wrap:wrap}
+    .kpi div{background:#0f141c;border:1px solid #213044;border-radius:10px;padding:10px 14px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .cols-3,.cols-2{grid-template-columns:1fr}
+    }
+  </style>
+
+  <!-- JSON-LD (estrutura de dados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Agente Financeiro WPP",
+    "url": "https://guipasquetti.github.io/",
+    "logo": "https://guipasquetti.github.io/icon.png",
+    "sameAs": [
+      "https://wa.me/5511973747278"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "contato@seudominio.com.br",
+      "telephone": "+55-11-973747278",
+      "areaServed": "BR"
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR",
+      "addressLocality": "São Paulo",
+      "streetAddress": "Rua Exemplo, 123",
+      "postalCode": "01234-000"
+    }
+  }
+  </script>
 </head>
 <body>
-  <h1>Site ativo - Guilherme Pasquetti</h1>
-  <p>Este domínio está verificado.</p>
+
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        Agente Financeiro WPP
+      </div>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Organize suas finanças diretamente pelo WhatsApp</h1>
+        <p>Envie mensagens e registre seus lançamentos. Receba lembretes, planilhas e um resumo simples do seu mês.</p>
+
+        <!-- TODO: troque pelo seu número oficial do WhatsApp Cloud / Business -->
+        <a class="cta" href="https://wa.me/5511973747278" target="_blank" rel="noopener">
+          💬 Falar no WhatsApp
+        </a>
+
+        <div class="kpi" aria-label="indicadores">
+          <div>⏱️ Resposta rápida</div>
+          <div>🔐 Dados tratados com segurança</div>
+          <div>📊 Exportação para Google Sheets</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">O que você pode fazer</h3>
+        <ul class="muted" style="margin:8px 0 0;padding-left:18px">
+          <li>Registrar um gasto/receita em segundos</li>
+          <li>Marcar categoria e forma de pagamento</li>
+          <li>Receber lembretes de contas e metas</li>
+          <li>Exportar lançamentos para sua planilha</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <div class="grid cols-2">
+        <div>
+          <h2>Sobre o projeto</h2>
+          <p class="muted">
+            O Agente Financeiro WPP é um assistente simples que facilita seu controle financeiro sem precisar de app.
+            Você só conversa pelo WhatsApp e nós organizamos tudo para você.
+          </p>
+        </div>
+        <div class="card">
+          <strong>Informações da empresa</strong>
+          <ul class="muted" style="margin:8px 0 0;padding-left:18px">
+            <!-- TODO: preencha os dados oficiais da sua empresa/pessoa -->
+            <li><b>Razão social / Responsável:</b> Seu Nome / Sua Empresa LTDA</li>
+            <li><b>CNPJ/CPF:</b> 00.000.000/0000-00</li>
+            <li><b>Endereço:</b> Rua Exemplo, 123 — São Paulo/SP</li>
+            <li><b>E-mail:</b> <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
+            <li><b>Telefone:</b> <a href="tel:+5511973747278">+55 (11) 97374-7278</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona">
+      <h2>Como funciona</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <strong>1) Você envia uma mensagem</strong>
+          <p class="muted">Ex.: “Gastei R$ 45,00 em mercado, cartão crédito, categoria Mercado”.</p>
+        </div>
+        <div class="card">
+          <strong>2) Nós registramos</strong>
+          <p class="muted">O lançamento é salvo e, se quiser, também vai para sua planilha no Google Sheets.</p>
+        </div>
+        <div class="card">
+          <strong>3) Você visualiza</strong>
+          <p class="muted">Receba um resumo do mês e lembretes de contas importantes por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <strong>Lançamentos por WhatsApp</strong>
+          <p class="muted">Registro rápido de despesas e receitas, com categoria e observações.</p>
+        </div>
+        <div class="card">
+          <strong>Lembretes e metas</strong>
+          <p class="muted">Avisos de vencimentos e metas personalizadas por período.</p>
+        </div>
+        <div class="card">
+          <strong>Planilha no Google</strong>
+          <p class="muted">Integração simples com a sua planilha para análise e histórico.</p>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:16px">
+        Ao usar este serviço, você concorda com a 
+        <a href="/politica-privacidade.html">Política de Privacidade</a> e os 
+        <a href="/termos-uso.html">Termos de Uso</a>.
+      </p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p class="muted">Tem dúvidas? Fale com a gente:</p>
+          <ul class="muted" style="padding-left:18px;margin:8px 0 0">
+            <li>WhatsApp: <a href="https://wa.me/5511973747278" target="_blank" rel="noopener">+55 (11) 97374-7278</a></li>
+            <li>E-mail: <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></li>
+          </ul>
+          <a class="cta" href="https://wa.me/5511973747278" target="_blank" rel="noopener">💬 Abrir WhatsApp</a>
+        </div>
+        <div class="card">
+          <strong>Conformidade & Privacidade</strong>
+          <p class="muted">
+            Tratamos seus dados com segurança e somente para a finalidade de oferecer este serviço. 
+            Leia nossa <a href="/politica-privacidade.html">Política de Privacidade</a> para detalhes,
+            incluindo direitos do titular (LGPD).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+        <div>© <span id="y"></span> Agente Financeiro WPP. Todos os direitos reservados.</div>
+        <div>
+          <a href="/politica-privacidade.html">Política de Privacidade</a> •
+          <a href="/termos-uso.html">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
